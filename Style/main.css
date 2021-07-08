@@ -1,0 +1,111 @@
+:root{/*  declarar variavel no ss dentro da razi do elemento */
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* O limite de tudo que esta aqui dentro é a caixa */
+
+}
+/*elementos base*/
+
+body{
+background-color: var(--preta);
+font-family: 'Arial', Times, serif;
+color: white;
+}
+
+header .container{
+    display: flex; /* Permite alinhar os elementos em tela */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+  
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50) , rgba(0,0,0,.50)100%), url('../img/greys.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex; /* joga os elementos sempre para o padrão em linha */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;/*  Começam sempre da esquerda */
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 70%;
+
+}
+
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.botao{
+    background-color:rgba(0, 0, 0, .50);
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* mostra que é um lugar "clicavel" */
+   transition: .4s ease all; /* transição entre uma animação e outra */
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+height: 100%;
+width: 100%;
+display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
